@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap');
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #170b47;
+  color: #e9f3ff;
+  margin: 0;
+  font-family: "Geom", sans-serif;
+  font-weight: 400;
+  font-size: 1.15em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Secular One", sans-serif;
+}
+
+h3 { color: #ff6c1e; }
+
+footer {
+  background-color: #181321;
+  padding: 25px;
+  text-align: center;
+  font-size: .75em;
+}
+
+.title {
+  color: #6e80cf;
+  line-height: 2em;
+}
+
+a {
+  color: #e9f3ff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .15s ease-in-out;
+}
+
+a:hover { color: #ff6c1e; }
+
+button {
+  background-color: rgba(0,0,0,0);
+  color: #ff6c1e;
+  border-color: #ff6c1e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: "Geom", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  transition: .15s ease-in-out;
+}
+
+button:hover {
+  background-color: #343ad8;
+  color: #e9f3ff;
+  border-color: #343ad8;
+  cursor: pointer;
+}
+
+#Landing {
+  background-color: #1b083a;
+  height: 100vh;
+  margin-bottom: 25px;
+  padding: 75px;
+  overflow: hidden;
+}
+
+.name {
+  color: #343ad8;
+  font-size: 3em;
+}
+
+.roleLine {
+  color: #ff6c1e;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  margin-top: -35px;
+  text-indent: 25px;
+}
+
+#roles {
+  color: #fe8f53;
+  font-weight: 700;
+}
+
+#About {
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  padding-left: 25px;
+  padding-bottom: 75px;
+  font-size: .8em;
+}
+
+.about-header { color: #6e80cf; }
+
+#Contact {
+  background-color: #181321;
+  height: inherit;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  line-height: 2;
+}
+
+#Contact h3 { margin: 0; }
+
+#closeContact {
+  float: right;
+}
+
+#email:hover { cursor: pointer; }
+
+#clipboardMsg {
+	background-color: #432816;
+	display: none;
+	border-radius: 7px;
+	color: #fe8f53;
+	font-size: .75em;
+	font-style: italic;
+	margin-bottom: -30px;
+}
+
+#Works {
+  margin: 0 15%;
+  height: 500px;
+  padding-right: 80px;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: skew(-10deg);
+  -moz-transform: skew(-10deg);
+  -o-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+#Works h1 {
+  width: 330px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 0 15px;
+  margin: 0;
+  margin-bottom: 85px;
+  margin-right: -130px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#container {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  transition: gap .06s ease-in;
+}
+
+.showcase {
+  width: 33.33%;
+  margin: 0;
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 7px;
+  transition: width .06s ease-in, background-color .06s ease-out;
+}
+
+.showcase h2 {
+  transform: rotate(-90deg);
+  width: 500px;
+  color: #fe8f53;
+  margin-left: -250px;
+  margin-top: 195px;
+}
+
+.showcase article {
+  width: 35%;
+  height: 460px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  padding-right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transform: skew(10deg);
+  -moz-transform: skew(10deg);
+  -o-transform: skew(10deg);
+  transform: skew(10deg);
+  text-align: right;
+}
+
+.showcase article table {
+  width: 100%;
+  font-size: .75em;
+  line-height: 2;
+}
+
+.showcase:hover {
+  cursor: pointer;
+}
+
+.showcase:hover::after { transition: background-color .06s ease-in; }
+
+#work1, #work2, #work3 {
+	background-size: cover;
+	background-color: #1b083a;
+	background-blend-mode: overlay;
+	transition: .15s ease-in;
+}
+#work1:hover, #work2:hover, #work3:hover { background-color: #222222; }
+
+#work1 { background-image: url('../media/frfs.png'); background-position: center; }
+#work1:hover { background-image: url('../media/frfs_demo.gif'); background-position: center; }
+#work1 article { margin-right: 245px; }
+
+#work2 { background-image: url('../media/cc.png'); background-position: center; }
+#work2:hover { background-image: url('../media/cc_techdemo.gif'); background-position: center; }
+#work2 article { margin-right: 185px; }
+
+#work3 { background-image: url('../media/rotrm.png'); background-position: center; }
+#work3:hover { background-image: url('../media/rotrm_demo.gif'); background-position: center; }
+#work3 article { margin-right: 125px; }
